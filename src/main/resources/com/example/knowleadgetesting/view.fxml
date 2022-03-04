@@ -21,20 +21,20 @@
          </children></AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
          <children>
-            <RadioButton fx:id="answerF" layoutX="30.0" layoutY="160.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="Console.Writeline()">
+            <RadioButton fx:id="answerF" layoutX="37.0" layoutY="234.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="Console.Writeline()">
                <toggleGroup>
                   <ToggleGroup fx:id="answers" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="answerS" layoutX="30.0" layoutY="189.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="print()" toggleGroup="$answers" />
-            <RadioButton fx:id="answerTh" layoutX="30.0" layoutY="219.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="System.out.println()" toggleGroup="$answers" />
-            <RadioButton fx:id="answerFo" layoutX="30.0" layoutY="245.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="std::cout &lt;&lt; &quot; &quot; &lt;&lt; endl;" toggleGroup="$answers" />
-            <Text fx:id="questionId" layoutX="30.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В каком из вариантов корректый формат вывода на экран?" wrappingWidth="374.13660430908203">
+            <RadioButton fx:id="answerS" layoutX="37.0" layoutY="263.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="print()" toggleGroup="$answers" />
+            <RadioButton fx:id="answerTh" layoutX="37.0" layoutY="293.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="System.out.println()" toggleGroup="$answers" />
+            <RadioButton fx:id="answerFo" layoutX="37.0" layoutY="319.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="408.0" text="std::cout &lt;&lt; &quot; &quot; &lt;&lt; endl;" toggleGroup="$answers" />
+            <Text fx:id="questionId" layoutX="25.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В каком из вариантов корректый формат вывода на экран?" wrappingWidth="374.13660430908203">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Button fx:id="answerBtn" layoutX="147.0" layoutY="298.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="139.0" text="Ответить" />
+            <Button fx:id="answerBtn" layoutX="154.0" layoutY="372.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="139.0" text="Ответить" />
          </children></AnchorPane>
   </items>
 </SplitPane>

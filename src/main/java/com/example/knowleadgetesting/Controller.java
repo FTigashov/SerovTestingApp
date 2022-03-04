@@ -51,13 +51,46 @@ public class Controller {
             new Questions("В каком из вариантов представлен корректный формат?", new String[] {
                     "Console.Write()",
                     "print()",
-                    "System.out.println()",
-                    "std::cout << '' < endl;"}),
-            new Questions("Найдите ошибку.\npublic static void Main(String[] args) {\nSystem.out.print('Hello world'}", new String[]{
-                "Ошибка в выводе. Необходимо выводить Console.WriteLine('Hello world')",
-                "Название методов должно начинаться со строчной буквы. Правильно main",
-                "Правильно будет написать void Main(String[] args)",
-                "Привильно будет написать public static void Main() {\nSystem.out.print('Hello world'}"})
+                    "std::cout << '' < endl",
+                    "System.out.println()"}),
+            new Questions("Найдите ошибку.\npublic static void Main(String[] args) {\nSystem.out.print('Hello world'}", new String[] {
+                "Верно будет Console.WriteLine('Hello world')",
+                "Верно будет System.out.print('Hello world');",
+                "Необходимо написать void Main(String[] args)",
+                "Название метода со строчной буквы"}),
+            new Questions("Как указать индекс последнего элемента массива?", new String[] {
+                    "array.size",
+                    "array.size - 1",
+                    "array.length;",
+                    "array.length - 1"}),
+            new Questions("Какой результат работы данного кода?\n" +
+                    "public static void main(String[] args) {       \n" +
+                    "double a = 5;       \n" +
+                    "System.out.println(a / 2);   \n" +
+                    "}", new String[] {
+                    "unhandled exception",
+                    "2",
+                    "1",
+                    "2.5"}),
+            new Questions("Какой результат работы данного кода?\npublic static void main(String[] args) {\n" +
+                    "  int[] array = new int[]{11, 5, -4, 8, 4, 7};\n" +
+                    "  for (int i = 0; i < array.length; i += 2) {\n" +
+                    "     System.out.print(i+\" \");\n" +
+                    "  }\n" +
+                    "}", new String[] {
+                    "ArrayIndexOutOfBoundsException",
+                    "11",
+                    "11 -4 4",
+                    "0 2 4"}),
+            new Questions("Какой результат работы данного кода?\npublic static void main(String[] args) { \n" +
+                    "  String test = \"Hello\"; \n" +
+                    "  String test2 = \"Hello\"; \n" +
+                    "  System.out.println(test==test2);\n" +
+                    "}", new String[] {
+                    "null",
+                    "Hello world",
+                    "false",
+                    "true"}),
     };
 
     private int nowQuestion = 0, correctAnswers;
@@ -92,7 +125,7 @@ public class Controller {
                     correctAnswers++;
                 }
                 else {
-                    System.out.println("Ответ не верынй");
+                    System.out.println("Ответ не верный");
                 }
             }
             if (nowQuestion + 1 != questions.length) {
