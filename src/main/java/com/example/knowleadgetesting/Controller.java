@@ -61,7 +61,7 @@ public class Controller {
             new Questions("Как указать индекс последнего элемента массива?", new String[] {
                     "array.size",
                     "array.size - 1",
-                    "array.length;",
+                    "array.length",
                     "array.length - 1"}),
             new Questions("Какой результат работы данного кода?\n" +
                     "public static void main(String[] args) {       \n" +
@@ -152,7 +152,7 @@ public class Controller {
 
                 answerBtn.setVisible(false);
 
-                questionId.setText("Вы ответили правильно на " + correctAnswers + " вопросов");
+                questionId.setText("Количество правильно отвеченных вопросов: " + correctAnswers);
             }
         });
     }
