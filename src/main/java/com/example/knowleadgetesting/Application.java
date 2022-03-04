@@ -14,6 +14,7 @@ public class Application extends javafx.application.Application {
         stage.setTitle("Тестирование");
         stage.setResizable(false);
         stage.setScene(scene);
+        System.out.println("Приложение запущено!");
         stage.show();
     }
 

@@ -4,7 +4,9 @@ public class Questions {
     private String question;
     private String[] answers;
 
-
+    public String correctAnswer() {
+        return this.answers[answers.length - 1];
+    }
 
     public Questions(String question, String[] answers) {
         this.question = question;
